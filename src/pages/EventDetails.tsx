@@ -2,12 +2,14 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { Event } from "../types";
 import Loader from "../components/Loader";
+import BookingModal from "../components/BookingModal";
 
 function EventDetails() {
   const { id } = useParams();
 
   const [event, setEvent] = useState<Event | null>(null);
   const [loading, setLoading] = useState(true);
+  const [showBooking, setShowBooking] = useState(false);
 
   useEffect(() => {
     fetch(`http://localhost:3001/events/${id}`)
@@ -91,9 +93,12 @@ function EventDetails() {
           ))}
         </div>
 
-        <button className="mt-6 bg-blue-500 text-white px-6 py-3 rounded">
-          Book Tickets
+        <button onClick={() => setShowBooking(true)} className="mt-6 bg-blue-500 text-white px-6 py-3 rounded">
+            Book Tickets
         </button>
+        {showBooking && (
+        <BookingModal event={event} />
+        )}
       </div>
     </div>
   );
