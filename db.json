@@ -9,21 +9,41 @@
       "time": "09:00 AM",
       "location": "Toronto",
       "venue": "Convention Center",
-      "image": "https://picsum.photos/400/200",
+      "image": "https://picsum.photos/400/200?1",
       "organizerName": "Tech Events",
       "ticketTypes": [
-        {
-          "id": "1",
-          "name": "General",
-          "price": 99,
-          "available": 100
-        },
-        {
-          "id": "2",
-          "name": "VIP",
-          "price": 199,
-          "available": 20
-        }
+        { "id": "1", "name": "General", "price": 99, "available": 100 },
+        { "id": "2", "name": "VIP", "price": 199, "available": 20 }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Music Festival",
+      "description": "Live music event",
+      "category": "Music",
+      "date": "2026-07-10",
+      "time": "06:00 PM",
+      "location": "Vancouver",
+      "venue": "Downtown Arena",
+      "image": "https://picsum.photos/400/200?2",
+      "organizerName": "Music Canada",
+      "ticketTypes": [
+        { "id": "1", "name": "Regular", "price": 50, "available": 200 }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Football Championship",
+      "description": "National finals",
+      "category": "Sports",
+      "date": "2026-09-01",
+      "time": "04:00 PM",
+      "location": "Calgary",
+      "venue": "Sports Stadium",
+      "image": "https://picsum.photos/400/200?3",
+      "organizerName": "Sports League",
+      "ticketTypes": [
+        { "id": "1", "name": "General", "price": 80, "available": 300 }
       ]
     }
   ],

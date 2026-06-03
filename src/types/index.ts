@@ -1,5 +1,3 @@
-// src/types/index.ts
-
 export interface TicketType {
   id: string;
   name: string;
